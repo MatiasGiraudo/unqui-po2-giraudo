@@ -24,5 +24,7 @@ public class Ingreso {
 		return montoPercibido;
 	}
 	
-	
+	public int getHorasExtras() {
+		return 0;
+	}
 }

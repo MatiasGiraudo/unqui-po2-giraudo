@@ -9,6 +9,7 @@ public class IngresoHorasExtras extends Ingreso {
 		this.horasExtras = horasExtras;
 	}
 	
+	@Override
 	public int getHorasExtras() {
 		return this.horasExtras;
 	}
