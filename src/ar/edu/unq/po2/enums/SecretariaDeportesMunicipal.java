@@ -32,7 +32,9 @@ public class SecretariaDeportesMunicipal {
 	}
 	
 	public ActividadSemanal actividadConMenorCosto(Deporte deporte) {
-		return this.listActividades.stream().min(Comparator.comparing(ActividadSemanal::costoActividad)).get(); 
+		List<ActividadSemanal> listaDeDeporte = this.listActividades.stream().filter(actividad -> actividad.getDeporte() == deporte).toList(); 
+		ActividadSemanal actividad = listaDeDeporte.stream().min(Comparator.comparing(ActividadSemanal::costoActividad)).get(); 
+		return  actividad;
 	}
 	
 	/*public Map<Deporte, ActividadSemanal> actividadPorDeporte(){
