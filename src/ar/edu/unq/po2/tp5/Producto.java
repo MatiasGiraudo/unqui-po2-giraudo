@@ -1,12 +1,12 @@
 package ar.edu.unq.po2.tp5;
 
-public class Producto {
+public class Producto implements Facturable {
 
 	private String nombre;
-	private double precio;
+	private float precio;
 	private int stock;
 
-	public Producto(String nombre, double precio, int stock) {
+	public Producto(String nombre, float precio, int stock) {
 		this.nombre = nombre;
 		this.precio = precio;
 		this.stock = stock;
@@ -16,7 +16,7 @@ public class Producto {
 		return nombre;
 	}
 
-	public double getPrecio() {
+	public float getPrecio() {
 		return precio;
 	}
 

@@ -17,9 +17,9 @@ public class Caja {
 		return montoAPagar;
 	}
 
-	public void registrarProducto(Producto producto) throws Exception {
-		this.montoAPagar += producto.getPrecio();
-		producto.registrar();
+	public void registrarProducto(Facturable facturable) throws Exception {
+		this.montoAPagar += facturable.getPrecio();
+		facturable.registrar();
 	}
 
 }
